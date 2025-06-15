@@ -1,0 +1,150 @@
+/* Import the Norse Bold font */
+@font-face {
+    font-family: 'Norse-Bold';
+}
+
+/* Basic body and layout styles */
+body {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/* --- Left Side - Image and Logo --- */
+
+#img {
+    position: relative;
+    width: 40%;
+    background-image: url('https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hide the extra image tag from your HTML */
+#img > img {
+    display: none;
+}
+
+.Logo {
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.Logo img {
+    width: 100px;
+    height: auto;
+}
+
+.Logo span {
+    font-family: 'Norse-Bold', sans-serif;
+    font-size: 6rem;
+}
+
+
+/* --- Right Side - Form Content --- */
+
+.main-content {
+    width: 60%;
+    background-color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title, .form-container, .account-check {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 80%;
+    margin-bottom: 2rem;
+}
+
+#signup {
+    font-size: 1.5rem;
+    padding-left: 3rem;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 2rem 3rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    width: 45%; /* Two columns of inputs */
+}
+
+label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Input validation and focus styles */
+input:focus {
+    outline: none;
+    border-color: #3882F6;
+    box-shadow: 0 0 5px rgba(56, 130, 246, 0.5);
+}
+
+input:invalid {
+    border-color: #f87171;
+}
+
+
+button[type="submit"] {
+    background-color: #596D48; /* Green from the assignment */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.2);
+}
+
+.terms {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+}
+
+.terms a {
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
